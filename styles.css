@@ -1,69 +1,66 @@
 body {
-  font-family: system-ui, sans-serif;
-  margin: 0;
-  padding: 2rem;
-  background: #ffffff;   /* slightly better contrast */
-  color: #24292f;
+    font-family: system-ui, sans-serif;
+    margin: 0;
+    padding: 2rem;
+    background: #ffffff;
+    color: #24292f;
 }
 
-
-/* Header */
 header {
-  background: #24292f;
-  padding: 1rem 2rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+    background: #24292f;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-/* Navigation */
 .nav-list {
-  list-style: none;
-  display: flex;
-  gap: 1.5rem;
-  margin: 0;
-  padding: 0;
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    margin: 0;
+    padding: 0;
 }
 
 .nav-list a {
-  color: #f0f6fc;
-  text-decoration: none;
-  font-weight: bold;
+    color: #f0f6fc;
+    text-decoration: none;
+    font-weight: bold;
 }
 
 .nav-list a:hover {
-  text-decoration: underline;
+    text-decoration: underline;
 }
 
 /* Button */
 #theme-toggle {
-  background: #f0f6fc;
-  color: #24292f;
-  border: none;
-  padding: 0.5rem 1rem;
-  border-radius: 6px;
-  cursor: pointer;
+    background: #f0f6fc;
+    color: #24292f;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    cursor: pointer;
 }
 
 #theme-toggle:hover {
-  opacity: 0.8;
+    opacity: 0.8;
 }
 
 /* 🌙 DARK THEME */
 body[data-theme="dark"] {
-  background: #0d1117;
-  color: #f0f6fc;
+    background: #0d1117;
+    color: #f0f6fc;
 }
 
 body[data-theme="dark"] header {
-  background: #161b22;
+    background: #161b22;
 }
 
 body[data-theme="dark"] .nav-list a {
-  color: #f0f6fc;
+    color: #f0f6fc;
 }
 
 body[data-theme="dark"] #theme-toggle {
-  background: #30363d;
-  color: #f0f6fc;
+    background: #30363d;
+    color: #f0f6fc;
 }

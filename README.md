@@ -5,8 +5,6 @@ This project includes a dark mode feature.
 ### How it works
 
 - A button in the header toggles between light and dark themes
-- JavaScript listens for button clicks
-- It adds/removes a `data-theme="dark"` attribute on the `<body>`
 
 ### Styling
 
