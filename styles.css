@@ -3,15 +3,19 @@ body {
   margin: 0;
   padding: 2rem;
   background: #f6f8fa;
+  color: #24292f;
 }
 
 /* Header */
 header {
   background: #24292f;
   padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-/* Navigation list */
+/* Navigation */
 .nav-list {
   list-style: none;
   display: flex;
@@ -20,14 +24,45 @@ header {
   padding: 0;
 }
 
-/* Links */
 .nav-list a {
-  color: #f0f6fc; /* softer white for better readability */
+  color: #f0f6fc;
   text-decoration: none;
   font-weight: bold;
 }
 
-/* Hover effect */
 .nav-list a:hover {
   text-decoration: underline;
+}
+
+/* Button */
+#theme-toggle {
+  background: #f0f6fc;
+  color: #24292f;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+#theme-toggle:hover {
+  opacity: 0.8;
+}
+
+/* 🌙 DARK THEME */
+body[data-theme="dark"] {
+  background: #0d1117;
+  color: #f0f6fc;
+}
+
+body[data-theme="dark"] header {
+  background: #161b22;
+}
+
+body[data-theme="dark"] .nav-list a {
+  color: #f0f6fc;
+}
+
+body[data-theme="dark"] #theme-toggle {
+  background: #30363d;
+  color: #f0f6fc;
 }
