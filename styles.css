@@ -4,3 +4,30 @@ body {
   padding: 2rem;
   background: #f6f8fa;
 }
+
+/* Header */
+header {
+  background: #24292f;
+  padding: 1rem 2rem;
+}
+
+/* Navigation list */
+.nav-list {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+/* Links */
+.nav-list a {
+  color: #f0f6fc; /* softer white for better readability */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Hover effect */
+.nav-list a:hover {
+  text-decoration: underline;
+}
